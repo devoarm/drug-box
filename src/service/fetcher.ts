@@ -1,5 +1,5 @@
 export const getHttp = async (path: string): Promise<any> => {
-  const res = await fetch(`http://localhost:3000/api/${path}`);
+  const res = await fetch(`http://192.168.3.30:40/api/${path}`);
   // need to do this with fetch since doesn't automatically throw errors axios and graphql-request do
   try {
     if (res.ok) {
@@ -10,7 +10,7 @@ export const getHttp = async (path: string): Promise<any> => {
   }
 };
 export const postHttp = async (path: string, data: any): Promise<any> => {
-  const res = await fetch(`http://localhost:3000/api/${path}`, {
+  const res = await fetch(`http://192.168.3.30:40/api/${path}`, {
     method: "POST",
     headers: {
       Accept: "application/json",
