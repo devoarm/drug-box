@@ -109,8 +109,7 @@ const SendBox: NextPage<{
                 id="combo-box-demo"
                 options={boxs!}
                 disableClearable
-                // value={field.value}
-                {...field}
+                // value={field.value}                
                 getOptionLabel={(option: TypeBox) =>
                   option && option.drug_box_name
                 }
