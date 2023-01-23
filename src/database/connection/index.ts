@@ -2,10 +2,15 @@ import knex from "knex";
 const connection = require("knex")({
   client: "mysql2",
   connection: {
-    host: "localhost",
+    // host: "localhost",
+    // port: 3306,
+    // user: "root",
+    // password: "ntng",
+    // database: "drug_box",
+    host: "127.0.0.1",
     port: 3306,
-    user: "root",
-    password: "ntng",
+    user: "aran30",
+    password: "aranFvg8zjkowfh",
     database: "drug_box",
   },
   pool: {
